@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHANGE MONEY</title>
+    <link rel="stylesheet" href="appchuyendoitiente.css">
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th id="rong"> </th>
+        <th>From Currency</th>
+        <th> </th>
+        <th> To Currency</th>
+
+    </tr>
+    <tr>
+        <td > <input type="text" id="nhapvao"></td>
+        <td > </td>
+        <td>
+            <select>
+                <option >VietNam</option>
+
+            </select>
+        </td>
+        <td > </td>
+        <td>
+            <select>
+                <option>USD</option>
+
+            </select>
+        </td>
+        <td> </td>
+        <td>
+       <button id="xacnhan" onclick="changeMoney()"> Convert</button>
+        </td>
+
+    </tr>
+</table>
+<p id="ketqua"> Result: </p>
+<script>
+
+   function changeMoney(){
+       let input= parseInt(document.getElementById('nhapvao').value);
+       let ketqua=input /23000;
+       document.getElementById("ketqua").innerHTML= "Result:"+ketqua;
+   }
+
+
+
+</script>
+</body>
+</html>
