@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<p> Điểm trung bình 3 môn là: </p>
+<p id="avg"></p>
+<p  > Tổng 3 môn là:</p>
+<p id="sum"> </p>
+<body>
+    <script>
+        a=+prompt('Nhập điểm Toán: ')
+        b=+prompt('Nhập điểm Lí: ')
+        c=+prompt('Nhập điểm Hoá: ')
+            let x=a+b+c;
+            let y=x/3;
+     document.getElementById('avg').innerHTML =x;
+        document.getElementById('sum').innerHTML =y;
+
+
+
+    </script>
+</body>
+</html>
